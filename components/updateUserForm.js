@@ -255,16 +255,16 @@ import { BiBrush } from 'react-icons/bi'
 import Success from "./success"
 import Error from "./error"
 import { useQuery, useMutation, useQueryClient } from "react-query"
-import { getHello, getHellos, updateUser } from "../lib/helper"
+import { getHello, updateHello } from "../lib/helper"
 
 export default function UpdateUserForm({ formId, formData, setFormData }){
 
     const queryClient = useQueryClient()
    const {isLoading, isError, data, error} = useQuery(['Hello', formId], () => getHello(formId))
-    const UpdateMutation = useMutation((newData) => updateUser(formId, newData), {
+    const UpdateMutation = useMutation((newData) => updateHello(formId, newData), {
         onSuccess : async (data) => {
             // queryClient.setQueryData('users', (old) => [data])
-            queryClient.prefetchQuery('Hello', getHellos)
+            queryClient.prefetchQuery('Hello', getHello)
         }
     })
 
