@@ -11,6 +11,7 @@ import { getSession } from 'next-auth/react'
         </section>
     )
 }
+login_section.displayName = 'login_section';
 export default login_section
 export async function getServerSideProps({ req }){
     const session = await getSession({ req });
