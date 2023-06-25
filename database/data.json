@@ -1,0 +1,40 @@
+[
+   {
+        "id":"1",
+        "name":"Ajay",
+        "BankName":"SBI",
+        "BankAccountNo":"00006537",
+        "AddressLine1":"XYZ Apartments",
+        "AddressLine2":"Near Complex",
+        "City":"Agra",
+        "Country":"India",
+       "ZipCode":"283203"
+    },
+    {                 
+        "id":"2",                      
+        "name":"Dean",
+        "BankName":"ICICI",
+        "BankAccountNo":"93637929",
+        "AddressLine1":"Sunny Enclave",
+        "AddressLine2":"Near Mall",
+        "City":"Delhi",
+        "Country":"India",
+        "ZipCode":"200104"
+    
+    },
+    {
+        "id":"3",
+        "name":"Garrett",
+        "BankName":"PNB",
+        "BankAccountNo":"862627",
+        "AddressLine1":"SBZ Housing",
+        "AddressLine2":"Near Sports Complex",
+        "City":"Mohali",
+        "Country":"India",
+        "ZipCode":"201011"
+    
+    }  
+    ]
+    
+    
+    

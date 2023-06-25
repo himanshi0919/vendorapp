@@ -1,0 +1,8 @@
+import fs from 'fs';
+import path from 'path';
+
+const filePath = path.join(process.cwd(), 'public', 'data.json');
+
+export function checkDataFileExists() {
+  return fs.existsSync(filePath);
+}
