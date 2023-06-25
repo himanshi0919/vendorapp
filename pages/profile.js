@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from "next/link";
 import { getSession } from 'next-auth/react'
 
@@ -20,7 +21,7 @@ export async function getServerSideProps({ req }){
                 destination : "/login",
                 premanent: false
             }
-        }
+        };
     }
     // authorize user return session
     return {
