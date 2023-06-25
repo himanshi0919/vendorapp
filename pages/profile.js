@@ -13,7 +13,9 @@ const Profile = () => {
 
 Profile.displayName = 'Profile';
 
- async function getServerSideProps({ req }) {
+export default Profile;
+
+export async function getServerSideProps({ req }) {
     const session = await getSession({ req });
 
     if (!session) {
@@ -29,7 +31,4 @@ Profile.displayName = 'Profile';
     return {
         props: { session }
     };
-}
-module.export ={
-    Profile,getServerSideProps
 }
