@@ -2,7 +2,7 @@ import React from 'react';
 import Link from "next/link";
 import { getSession } from 'next-auth/react'
 
- login_section= () => {
+ function login_section ()  {
     return (
         <section className="container mx-auto text-center">
                 <h3 className="text-4xl font-bold">Thankyou!</h3>
@@ -11,7 +11,7 @@ import { getSession } from 'next-auth/react'
         </section>
     )
 }
-login_section.displayName = 'login_section';
+//login_section.displayName = 'login_section';
 export default login_section
 export async function getServerSideProps({ req }){
     const session = await getSession({ req });
