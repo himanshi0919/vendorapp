@@ -7,6 +7,9 @@ const connectMongoDB = async () => {
         if(connection.readyState == 1){
             return Promise.resolve(true)
         }
+        else{
+            return Promise.reject(false)
+        }
     } catch (error) {
         return Promise.reject(error)
     }
